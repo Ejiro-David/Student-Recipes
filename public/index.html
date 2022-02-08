@@ -109,7 +109,14 @@
         </main>
     </div>
 
-    <script src="index.js"></script> 
+    <script>
+        const burger = document.querySelector('#burger');
+        const menu = document.querySelector('#menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script> 
 </body>
 </html>
 
